@@ -3,10 +3,12 @@ import React, { useState } from 'react'
 export default function Counter() {
   let [count, setCount] = useState(0)
 
-  const decrement = () => {
+  const decrement = (e) => {
+    event.preventDefault()
     setCount(count - 1)
   }
-  const increment = () => {
+  const increment = (e) => {
+    event.preventDefault()
     setCount(count + 1)
   }
 
